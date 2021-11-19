@@ -1,0 +1,17 @@
+[package]
+name = "downloader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+indicatif = "0.15.0" # barra de progresso e biblioteca de relatórios CLI
+console = "0.13.0" # Uma abstração de terminal e console para Rust
+clap = "2.33.2" #Um analisador de argumentos de linha de comando
+ftp = "3.0.1" #Cliente FTP para Rust
+threadpool = "1.8.1" #Um pool de threads para executar vários trabalhos em um conjunto fixo de threads de trabalho.
+failure = { version = "0.1.8", features = [] } #Abstração experimental de tratamento de erros.
+url = "1.7.2" #Biblioteca de URL para Rust, com base no padrão de URL WHATWG
+reqwest = {version = "0.10.8", features = ["blocking"]}
+
